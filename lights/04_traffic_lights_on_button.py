@@ -5,7 +5,7 @@ import lights_config as config
 
 GPIO.setmode(GPIO.BCM)
 
-GPIO.setup(22, GPIO.IN)
+GPIO.setup(config.button, GPIO.IN)
 
 def createLight(pin):
   GPIO.setup(pin, GPIO.OUT)
@@ -39,7 +39,7 @@ green(1)
 
 try:
   while True:
-    state = GPIO.input(22)
+    state = GPIO.input(config.button)
     change = btnState(state)
     if change == True:
       if state == True:

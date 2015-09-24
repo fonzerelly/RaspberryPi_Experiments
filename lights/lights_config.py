@@ -1,7 +1,7 @@
-red = 25
+red = 18
 yellow = 23
-green = 18
-blue = 24
+green = 24
+blue = 25
 
-button = 22
+button = 4
 
